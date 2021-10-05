@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Api</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header class=container>
+        <h1>Consultando CEP</h1>
+    </header>
+    <main class="container">
+        <form action="">
+            <p><label for="input-cep">CEP</label></p>
+            <input id="input-cep" type="text" placeholder="00000-000" autocomplete="on" maxlength="9">
+
+            <p><label for="input-logradouro">Logradouro</label></p>
+            <input id="input-logradouro" disabled type="text" placeholder="Av. Paulista">
+
+            <p><label for="input-bairro">Bairro</label></p>
+            <input id="input-bairro" type="text" disabled placeholder="Bairro">
+
+            <p><label for="input-localidade">Localidade</label></p>
+            <input id="input-localidade" type="text" disabled placeholder="Cidade">
+
+            <p><label for="input-uf">UF</label></p>
+            <input id="input-uf" type="text" disabled placeholder="UF">
+        </form>
+    </main>
+    <footer>
+        <p>Muniz 2021 ©</p>
+    </footer>
+    <script src="scripts/script.js"></script>
+</body>
+
+</html>

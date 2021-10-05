@@ -1,0 +1,67 @@
+/* ------------- GLOBAL ------------- */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "PT Sans", sans-serif;
+}
+
+/* ------------- BODY ------------- */
+
+body {
+  margin-top: -0.17rem;
+  background: rgb(255, 255, 255);
+}
+
+.container {
+  width: min(1440px, 80vw);
+  margin: 0 auto;
+}
+
+/* ------------- HEADER ------------- */
+
+h1 {
+  margin: 1rem 0 1rem 0;
+}
+
+/* ------------- MAIN ------------- */
+
+form {
+  height: 60%;
+  width: 100%;
+}
+
+input {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 1rem;
+  border-radius: 0.25rem;
+  width: 100%;
+}
+
+input:focus {
+  box-shadow: 0 0 0 0;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  outline: 0;
+}
+
+/* ------------- FOOTER ------------- */
+
+footer {
+  background: rgb(255, 255, 255);
+  height: 5rem;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+}
+
+footer p {
+  opacity: 0.4;
+}
