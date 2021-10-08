@@ -11,22 +11,17 @@ const showData = (result) => {
   }
 };
 
-cep.addEventListener("blur", () => {
-  let search = cep.value.replace("-", "");
+cep.addEventListener("blur", async function getContent() {
+  try {
+    let search = await cep.value.replace("-", "");
 
-  console.log(search);
+    const response = await fetch(`https://viacep.com.br/ws/${search}/json/`);
 
-  const options = {
-    method: "GET",
-    mode: "cors",
-    cache: "default",
-  };
+    const data = await response.json();
 
-  fetch(`https://viacep.com.br/ws/${search}/json/`, options)
-    .then((response) => {
-      response.json().then((data) => {
-        showData(data);
-      });
-    })
-    .catch((e) => alert("Cep inválido! Tente novamente!"));
+    await showData(data);
+    }
+  catch (error) {
+    alert("Cep inválido! Tente novamente!");
+  }
 });
