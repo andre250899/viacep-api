@@ -11,7 +11,7 @@ const showData = (result) => {
   }
 };
 
-cep.addEventListener("blur", async function getContent() {
+async function getContent() {
   try {
     let search = await cep.value.replace("-", "");
 
@@ -24,4 +24,6 @@ cep.addEventListener("blur", async function getContent() {
   catch (error) {
     alert("Cep inválido! Tente novamente!");
   }
-});
+}
+
+cep.addEventListener("blur", getContent);
